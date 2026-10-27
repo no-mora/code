@@ -1,0 +1,313 @@
+/* --------------------- ШРИФТ MONTSERRAT --------------------- */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*---------------------ШРИФТ OPEN SANS --------------------- */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Основной текст сайта - Open Sans */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333; /* Цвет текста по умолчанию, если нужно */
+}
+
+/* Все заголовки - Montserrat SemiBold (600) */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .display-5, .display-6, .featurette-heading {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* Навигация, кнопки и мета-текст - Montserrat Regular (400) */
+.nav-link,
+.btn,
+.blog-post-meta,
+.my-header .h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
+}
+
+
+/* ---------------------Шапка сайта ------------------*/
+
+.my-header{
+    background-color: #bfcab6;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.my-header h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+.my-title{
+    color: #295115 !important;
+}
+
+.my-title:hover{
+    color: #fff !important;
+}
+
+.nav-link{
+    color: #295115;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: #295115 !important;
+    color: #fff !important;
+}
+
+.my-title .h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ---------------------Слайдер ------------------*/
+
+.carousel-item {
+    height: 600px;
+    background-color: #bfcab6;  
+}
+
+.btn-hero{
+    background-color: #295115;
+    border: 2px solid #295115;
+}
+
+.btn-hero:hover{
+    background-color: #bfcab6;
+    border: 2px solid #366c1b;
+    color: #000000;
+}
+
+.carousel-caption h2, 
+.carousel-caption p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------------------Информационный блок ------------------*/
+.my-container{
+    background-color: #bfcab6b3;
+    border-radius: 20px;
+    color: #295115;
+
+}
+
+.btn-info{
+    background-color: #568741;
+    border: 1px solid #295115;
+    color: #fff;
+}
+
+.btn-info:hover{
+    background-color: #bfcab6;
+    border: 1px solid #295115;
+    color: #295115;
+}
+
+.my-border{
+    border-bottom: 1px solid#355326 !important;
+}
+
+.icon-info{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.project{
+    padding-bottom: 0px !important;
+}
+
+/* --------------------- Блок-коллаж (Главная) ----------------- */
+.my-collage-section {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+
+.collage-img-main {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+}
+
+.collage-img-small {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.btn-outline-project {
+    background-color: transparent;
+    border: 1px solid #295115;
+    color: #295115;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-project:hover {
+    background-color: #295115;
+    color: #bfcab6;
+}
+
+/* ---------------------Футер сайта ------------------*/
+
+.my-footer{
+    background-color: #bfcab6;
+    padding: 40px;
+    color: #295115; 
+    border-top: 2px solid #295115;
+}
+
+.footer-info{
+    color: #295115;
+}
+
+.nav-link:hover{
+    color: #fff !important;
+}
+
+.social-links{
+    gap:20px;
+}
+
+.social-links img{
+    width: 32px;
+    height: 32px;
+}
+
+
+/*---------- Стили страницы блога ---------------*/
+.blog-post h2 {
+    color: #295115;
+}
+
+.blog-post-meta {
+    color: #568741;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+.blog-post a {
+    color: #295115;
+    transition: color .2s ease;
+}
+
+.blog-post h2{
+    font-size: 32px;
+}
+
+.blog-post a:hover {
+    color: #568741;
+}
+
+.start-blog{
+    margin-top: 30px;
+    background-color: #bfcab651 !important;
+    /* border: 2px solid #295115; */
+    color: #295115;
+}
+
+.about-blog{
+    background-color: #bfcab6b3 !important;
+}
+
+
+/*------------------ Стили страницы FAQ------------------ */
+
+
+.accordion-button:not(.collapsed) {
+    background-color: #eaf3e5;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 .2rem rgba(41, 81, 21, .2);
+}
+
+.accordion-collapse a {
+    color: #295115;
+}
+.accordion-collapse a:hover {
+    color: #000000;
+}
+
+.my-faq h3{
+ font-size: 24px;
+}
+
+
+/* ---------------------Стили проектов -------------------*/
+
+.btn-project{
+    background-color: #bfcab6;
+    border: 1px solid #295115;
+    color: #295115;
+}
+
+.btn-project:hover{
+    background-color: #295115;
+    border: 1px solid #bfcab6;
+    color: #bfcab6;
+}
+
+.my-span{
+    color: #295115;
+}
+
+
+/* ---------------------Стили контактов -------------------*/
+
+.row input{
+    background-color: #bfcab6;
+
+}
+
+.row select{
+    background-color: #bfcab6;
+}
+.row option{
+    background-color: #ffffff;
+}
+.row input:focus {
+    box-shadow: 0 0 0 .2rem rgba(41, 81, 21, .2);
+    border: 1px solid #295115;
+}
+
+.row select:focus {
+    box-shadow: 0 0 0 .2rem rgba(41, 81, 21, .2);
+    border: 1px solid #295115;
+}
+
+.card-body h3{
+font-size: 24px;
+}
+
+.card-body h4{
+font-size: 18px;
+}
